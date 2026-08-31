@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "mx-upscale",
-    platforms: [.macOS(.v14), .iOS(.v17)],
+    platforms: [.macOS(.v15), .iOS(.v17)],
     products: [
         .executable(name: "mx-upscale", targets: ["mx-upscale"]),
         .library(name: "Upscaling", targets: ["Upscaling"])
