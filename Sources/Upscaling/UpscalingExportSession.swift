@@ -508,6 +508,9 @@ public class UpscalingExportSession {
                     // closed GOP
                     compression[String(kVTCompressionPropertyKey_AllowOpenGOP)] = false
 
+                    // enable spatial adaptive quantization
+                    compression[String(kVTCompressionPropertyKey_SpatialAdaptiveQPLevel)] = kVTQPModulationLevel_Default;
+
                     // no real time
                     compression[String(kVTCompressionPropertyKey_RealTime)] = false
                     // prio speed
